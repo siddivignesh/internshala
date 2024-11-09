@@ -1,0 +1,174 @@
+/* Overall Style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #6a4fb8; /* Header color */
+  color: #f4f4f4; /* Header text color */
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header .tagline {
+  font-size: 1.2em;
+  color: #fff; /* Tagline color */
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Navigation background color */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff; /* Navigation link color */
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  color: #ff0; /* Hover color for links */
+}
+
+/* Container for articles */
+.container {
+  max-width: 1200px; /* Set a max-width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Blog Section */
+.articles-container {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-between; /* Space between items */
+  gap: 20px; /* Space between items */
+}
+
+article {
+  flex: 1; /* Flex grow */
+  min-width: calc(30% - 20px); /* Adjust minimum width for responsiveness */
+  background-color: #fff; /* Article background color */
+  border: 1px solid #ccc; /* Border for articles */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside articles */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+ul {
+  padding: 0; /* Remove default padding */
+  list-style-type: none; /* Remove bullet points */
+}
+
+iframe {
+  width: 100%; /* Make the iframe responsive */
+  height: 315px; /* Fixed height for iframes */
+  border: none; /* Remove border */
+}
+
+/* About Section */
+#about {
+  margin: 20px auto;
+  max-width: 1200px; /* Set a max width for the About section */
+  width: 100%; /* Full width within the max limit */
+  background-color: #fff; /* Background color for the About box */
+  border: 1px solid #ccc; /* Border for the About box */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside About box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Contact Section */
+#contact {
+  margin: 20px auto;
+  max-width: 1200px; /* Set a max width for the Contact section */
+  width: 100%; /* Full width within the max limit */
+  background-color: #fff; /* Background color for the Contact box */
+  border: 1px solid #ccc; /* Border for the Contact box */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside Contact box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px; /* Space above labels */
+}
+
+input, textarea {
+  padding: 10px; /* Padding inside input fields */
+  margin-top: 5px; /* Space above input fields */
+  border: 1px solid #ccc; /* Border for input fields */
+  border-radius: 4px; /* Rounded corners */
+}
+
+button {
+  margin-top: 10px; /* Space above button */
+  padding: 10px; /* Padding inside button */
+  background-color: #6a4fb8; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+button:hover {
+  background-color: #5a3f9a; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Footer background color */
+  color: #f4f4f4; /* Footer text color */
+  text-align: center;
+  padding: 10px 0; /* Padding for footer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    #about,
+    #contact {
+        margin: 10px; /* Reduce margin for small screens */
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+
+    article {
+        min-width: 100%; /* Allow articles to stack on small screens */
+    }
+}
